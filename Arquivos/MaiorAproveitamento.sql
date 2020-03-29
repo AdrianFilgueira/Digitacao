@@ -1,0 +1,1 @@
+﻿SELECT aluno.nome, aula.aproveitamento from aula, aluno WHERE aula.aproveitamento = (select max(aula.aproveitamento) from aula) AND aluno.id_aluno = aula.aluno
